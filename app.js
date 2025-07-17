@@ -7,8 +7,8 @@ const SUB_PATH = process.env.SUB_PATH || 'log';
 
 const server = http.createServer((req, res) => {
   if (req.url === '/') {
-    res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end('Hello world!');
+    res.writeHead(302, { 'Location': 'https://sublink.eooce.com' });
+    res.end();
   } 
   else if (req.url === `/${SUB_PATH}`) {
     fs.readFile("./.npm/log.txt", "utf8", (err, data) => {
