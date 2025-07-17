@@ -1,4 +1,4 @@
-FROM node20:alpine3.20
+FROM node:alpine3.20
 
 WORKDIR /tmp
 
