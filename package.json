@@ -1,16 +1,17 @@
 {
-  "name": "nodejs-glitch",
+  "name": "node-express",
   "version": "1.0.0",
-  "description": "glitch",
-  "main": "index.js",
+  "description": "node-express",
+  "main": "app.js",
   "author": "admin",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js",
+    "build": "npm run build",
   },
   "dependencies": {
-    "axios": "latest"
+    "axios": "^1.9.0"
   },
   "engines": {
     "node": ">=14"
