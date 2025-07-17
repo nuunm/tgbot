@@ -12,4 +12,6 @@ RUN apk update && apk upgrade &&\
     chmod +x app.js &&\
     npm install
 
+ENV NAME=Huggingface
+
 CMD ["npm", "start"]
